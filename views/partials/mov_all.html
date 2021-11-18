@@ -1,0 +1,39 @@
+
+    <div class="alert alert-{{.alert}}" role="alert">
+        A simple alert with <a href="#" class="alert-link">an example link</a>. Give it a click if you like.
+      </div>
+
+    <div class="album py-5 bg-light">
+      <div class="container">
+  
+        <div class="row row-cols-1 row-cols-sm-2 row-cols-md-3 g-3">
+
+         {{range .movies}}
+
+          <div class="col">
+            <div class="card shadow-sm">
+
+                <img src="{{.ImgCover}}" class="card-img-top" alt="{{.ImgCover}}" />
+            
+  
+              <div class="card-body">
+                <p class="card-text">{{.MovieId}}</p>
+                <div class="d-flex justify-content-between align-items-center">
+                  <div class="btn-group">
+                    <button type="button" class="btn btn-sm btn-outline-secondary">View</button>
+                    <button type="button" class="btn btn-sm btn-outline-secondary">Edit</button>
+                  </div>
+                  <small class="text-muted">{{.MovieRelease}}</small>
+                </div>
+              </div>
+            </div>
+          </div>
+
+
+{{end}}
+
+
+        </div>
+      </div>
+    </div>
+  

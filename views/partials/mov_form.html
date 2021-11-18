@@ -1,0 +1,53 @@
+
+
+
+
+
+<div id="model-myform">
+
+
+
+  <div v-html="notif"></div>
+  
+    <section class="py-5 container">
+    
+
+
+            <div class="mb-3">
+                <label for="mov_id">
+                    mov_id            
+                </label>
+                <input type="text" name="mov_id" id="mov_id" size="50" v-model="mov_id">
+            </div>
+           
+
+            <div class="mb-3">
+                <label for="mov_release">
+                    mov_release</label>
+                <input type="text" name="mov_release" id="mov_release" v-model="mov_release">
+            
+            </div>
+            
+
+            <div class="mb-3">
+                <label for="img_cover">
+                    img_cover            </label>
+                <input type="text" name="img_cover" id="img_cover" size="50"  v-model="img_cover">
+
+        
+            </div>
+
+
+
+            <button class="btn btn-primary"  v-on:click="iClick">post</button>
+
+
+
+
+      </div>
+    </section>
+
+  </div>
+  
+  
+  
